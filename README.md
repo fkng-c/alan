@@ -25,5 +25,15 @@
     <footer>
     <a href="https://twitter.com/eemmbab">Alanのツイッター</a>
     </footer>
+  
+    <form>
+    <div class="form-item">内容</div>
+    <textarea name="body"></textarea>
+    <input type="submit" value="送信">
+    </form>
+    
+    <?php
+    echo $_POST['body'];
+    ?>
     </body>
     </html>
