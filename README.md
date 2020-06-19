@@ -18,3 +18,22 @@
       <p>主にパズドラと荒野行動をプレイしています。一緒に遊びましょう！</p>
      </body>
      </html>
+
+    #include <stdio.h>
+    void main() {
+    int a[5] = {10, 20, 30, 40, 50};
+    int b;
+    int *p;
+
+    p = &a[0];
+    printf("配列Aの先頭のアドレスは%pです\n", p);
+    printf("はじめにPの指している値は%dです\n", *p);
+
+    p+=2;
+    printf("ここでPの指している値は%dです\n", *p);
+
+    printf("bの中身は%dです\n", a[1]);
+
+    b = *(p-1);
+    printf("bの中身は%dです\n", b);
+    }
